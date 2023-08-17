@@ -19,3 +19,8 @@ class Scoreboard(Food):
         self.clear()
         self.score += 1
         self.update_scoreboard()
+
+    def game_over(self):
+        self.goto(0,0)
+        self.write("GAME OVER", align=ALIGMENT, font=FONT)
+
